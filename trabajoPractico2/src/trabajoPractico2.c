@@ -58,9 +58,9 @@ int main(void) {
 				GetString("ingrese su nombre: ", name);
 				GetString("ingrese su apellido: ", lastName);
 				price=PedirNumero ("ingrese el precio: ");
-				typePassenger=PedirNumero ("ingrese el tipo de pasajero: ");
+				typePassenger=PedirNumero ("1)Primera clase\n2)turista\nIngrese el tipo de pasajero: ");
 				GetString("ingrese su codigo de vuelo: ", flyCode);
-				statusFlyght=PedirNumero ("ingrese el estado: ");
+				statusFlyght=PedirNumero ("1)Activo \n2)NO ACTIVO \nIngrese el estado de vuelo: ");
 
 				aux= AddPassenger(passengerList, TAM, id, name, lastName, price,typePassenger, flyCode, statusFlyght);
 				if(aux == 1)

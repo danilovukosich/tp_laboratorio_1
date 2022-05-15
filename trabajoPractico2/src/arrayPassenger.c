@@ -172,6 +172,8 @@ void ShowPassenger(sPassenger passenger)
 	printf("\n%4d %10s %10s %4.2f %10s %4d %4d\n",passenger.id, passenger.name, passenger.lastname, passenger.price, passenger.flycode, passenger.typePassenger, passenger.statusFlight);
 
 }
+
+////////////////////////////////////////////////////////////////////
 void ShowPassengersList(sPassenger list[], int len)
 {
 	for(int i=0; i<len; i++)
